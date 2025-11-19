@@ -1,0 +1,1169 @@
+/* =============================
+   GLOBAL BASE – NEON VIOLET THEME
+   ============================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+body, p, a, li, input, textarea, button, label {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+   position: relative;
+    z-index: 2;
+ 
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* =============================
+   HEADER
+   ============================= */
+#header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(140, 80, 255, 0.25);
+}
+
+.logo {
+  width: 60px;
+  margin-right: 20px;
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+#heading {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* =============================
+   NAVIGATION
+   ============================= */
+nav {
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(140, 80, 255, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+#navi {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin: 0;
+}
+
+#navi li {
+  margin: 0 20px;
+}
+
+#navi a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, transform 0.3s;
+}
+#navi a:active,
+#navi a.active {
+    color: #f3d6ff;
+    text-shadow: 
+        0 0 12px rgba(230, 150, 255, 1),
+        0 0 20px rgba(200, 120, 255, 0.9),
+        0 0 35px rgba(170, 80, 255, 0.7);
+    transform: scale(1.05);
+}
+
+#navi a:hover {
+  color: #bb7bff;
+  text-shadow: 
+        0 0 8px rgba(200, 120, 255, 0.8),
+        0 0 15px rgba(180, 90, 255, 0.6),
+        0 0 25px rgba(160, 60, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* =============================
+   HERO SECTION — Neon Violet
+   ============================= */
+.hero {
+  height: 100vh;
+  background:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+      url("/static/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+
+/* Soft violet holographic glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(150, 40, 255, 0.12), transparent 70%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 420px;
+  height: auto;
+  margin-bottom: 18px;
+  animation: smoothLogoIn 2.3s ease-out forwards,
+             floatLogo 3.8s ease-in-out infinite;
+  opacity: 0.96;
+  filter: drop-shadow(0 0 10px rgba(160, 80, 255, 0.25));
+}
+
+/* Futuristic soft glow for hero logo */
+.glow-logo {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8))
+          drop-shadow(0 0 25px rgba(229, 207, 252, 0.6))
+          drop-shadow(0 0 45px rgba(213, 184, 253, 0.4));
+  animation: logoPulse 3.5s ease-in-out infinite;
+}
+
+/* Slow, subtle breathing glow */
+@keyframes logoPulse {
+  0% {
+    filter: drop-shadow(0 0 12px rgba(180, 90, 255, 0.8))
+            drop-shadow(0 0 25px rgba(160, 70, 255, 0.6))
+            drop-shadow(0 0 45px rgba(140, 60, 255, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(200, 110, 255, 1))
+            drop-shadow(0 0 35px rgba(170, 80, 255, 0.9))
+            drop-shadow(0 0 60px rgba(150, 70, 255, 0.6));
+  }
+  100% {
+    filter: drop-shadow(0 0 12px rgba(180, 90, 255, 0.8))
+            drop-shadow(0 0 25px rgba(160, 70, 255, 0.6))
+            drop-shadow(0 0 45px rgba(140, 60, 255, 0.4));
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #5400ce, #8f39ff);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(120, 0, 255, 0.35);
+}
+
+.hero-btn:hover {
+  background: linear-gradient(90deg, #8f39ff, #5400ce);
+  transform: scale(1.06);
+  box-shadow: 0 0 20px rgba(145, 80, 255, 0.55);
+}
+
+/* =============================
+   ABOUT SECTION
+   ============================= */
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e8d8ff;
+}
+
+.about-content strong {
+  color: #cfa9ff;
+}
+
+.about-content .btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: linear-gradient(45deg, #6d00ff, #a349ff);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about-content .btn:hover {
+  transform: scale(1.08);
+}
+
+/* =============================
+   🎮 GAMES SECTION — Neon Violet
+   ============================= */
+.games-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.games-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top center, rgba(150, 80, 255, 0.15), transparent 70%);
+  z-index: 0;
+}
+
+.games-section h2 {
+  font-size: 46px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+/* GRID */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* CARDS */
+.game-card {
+  background: rgba(255, 255, 255, 0); /* fully transparent */
+  border: 1px solid rgba(180, 120, 255, 0.35);
+  border-radius: 18px;
+  padding: 25px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  backdrop-filter: blur(0px); /* stronger holo blur */
+}
+
+
+.game-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 22px rgba(150, 60, 255, 0.55);
+}
+
+/* Card Images */
+.game-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Titles */
+.game-card h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #e2c4ff;
+}
+
+/* Text */
+.game-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #e9d9ff;
+}
+
+/* Buttons */
+.game-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #7a1aff, #b45cff);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.game-btn:hover {
+  transform: scale(1.08);
+}
+
+/* =============================
+   🍽 CAFÉ DINING — Neon Violet
+   ============================= */
+/* === FUTURISTIC HOLOGRAM CAFE SECTION === */
+.cafe-dining {
+  background: linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,18,51,0.88));
+  padding: 100px 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* moving hologram scanlines */
+.cafe-dining::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 2px,
+    transparent 4px
+  );
+  animation: hologramScan 12s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes hologramScan {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.cafe-dining h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-shadow: 0 0 15px rgba(150, 70, 255, 0.6);
+  z-index: 2;
+  position: relative;
+}
+
+/* hologram cards */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-column {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(180, 90, 255, 0.4);
+  border-radius: 18px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(120, 40, 255, 0.3);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* hologram glow corners */
+.menu-column::before,
+.menu-column::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #c574ff;
+}
+
+.menu-column::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+.menu-column::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+/* hover effect */
+.menu-column:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(160, 60, 255, 0.8);
+}
+
+.menu-column h3 {
+  color: #e5c5ff;
+  border-bottom: 2px solid rgba(200, 130, 255, 0.5);
+  padding-bottom: 8px;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.menu-column p {
+  color: #f0e6ff;
+  font-size: 17px;
+  margin: 8px 0;
+}
+
+
+/* =============================
+   💸 PRICING SECTION — Neon Violet
+   ============================= */
+/* === FUTURISTIC HOLOGRAM PRICING SECTION === */
+.pricing-section {
+  background: linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,18,51,0.88), rgba(0,0,32,0.88));
+  padding: 100px 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* moving hologram scanlines */
+.pricing-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.04) 0px,
+    rgba(255, 255, 255, 0.04) 2px,
+    transparent 4px
+  );
+  animation: pricingScan 14s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes pricingScan {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+.pricing-section h2 {
+  font-size: 45px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-shadow: 0 0 18px rgba(200, 100, 255, 0.7);
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-column {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(180, 90, 255, 0.4);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 0 25px rgba(120, 40, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* hologram corners */
+.pricing-column::before,
+.pricing-column::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #d184ff;
+}
+
+.pricing-column::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.pricing-column::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+.pricing-column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 45px rgba(170, 70, 255, 0.8);
+}
+
+.pricing-column h3 {
+  color: #f0d4ff;
+  border-bottom: 2px solid rgba(210, 140, 255, 0.5);
+  padding-bottom: 8px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pricing-column p,
+.pricing-column li {
+  color: #f7ecff;
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.pricing-column .btn {
+  background: linear-gradient(90deg, #a44bff, #d18dff);
+  box-shadow: 0 0 20px rgba(190, 80, 255, 0.5);
+}
+
+.pricing-column .btn:hover {
+  background: linear-gradient(90deg, #d18dff, #b766ff);
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(210, 120, 255, 0.7);
+}
+
+
+/* =============================
+   🖼 GALLERY SECTION — Neon Violet
+   ============================= */
+.gallery-section {
+  background: linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,18,51,0.88));
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.gallery-section h2 {
+  font-size: 48px;
+  color: #ffffff;
+  padding-bottom: 12px;
+}
+
+/* Sub-gallery */
+.sub-gallery {
+  margin-bottom: 80px;
+}
+
+.sub-gallery h3 {
+  font-size: 36px;
+  color: #e6d0ff;
+}
+
+/* Slideshow container */
+.gallery-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(160, 80, 255, 0.4);
+}
+
+#image-gallery {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+#image-gallery img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#image-gallery img.active {
+  opacity: 1;
+}
+
+/* Video Grid */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.video-container video:hover {
+  transform: scale(1.03);
+}
+
+/* =============================
+   CONTACT SECTION — Neon Violet
+   ============================= */
+.contact-section {
+  background: linear-gradient(to bottom right, rgba(0,8,20,0.88), rgba(0,29,61,0.88), rgba(0,8,20,0.88));
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-subtext {
+  font-size: 18px;
+  color: #dbcaff;
+  margin-bottom: 30px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.social-icons a {
+  font-size: 2.1rem;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(120, 50, 190, 0.06);
+  color: #e9d9ff;
+}
+
+.social-icons a:hover {
+  transform: translateY(-6px) scale(1.05);
+  filter: brightness(1.12);
+}
+
+/* Platform colors subtle */
+.social-icons a.instagram { color: #ff6fb6; }
+.social-icons a.facebook  { color: #b69bff; }
+.social-icons a.youtube   { color: #ff6b9a; }
+.social-icons a.email     { color: #ffd99a; }
+
+/* Contact Form */
+.contact-form {
+  max-width: 620px;
+  margin: 0 auto;
+  background: rgba(140, 60, 200, 0.08);
+  padding: 42px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(90, 30, 150, 0.14);
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 600;
+  color: #e6d7ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(200, 150, 255, 0.08);
+  border-radius: 10px;
+  margin-top: 8px;
+  background: #150727;
+  color: #f0e7ff;
+  font-size: 15px;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(130, 60, 200, 0.12);
+  border-color: rgba(200, 140, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  background: linear-gradient(90deg, #5c00ea, #b74fff);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 36px rgba(130, 50, 220, 0.18);
+}
+
+/* =============================
+   FOOTER — Neon Violet
+   ============================= */
+footer {
+  background: linear-gradient(180deg, #0e0016, #1a002b);
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+  font-size: 14px;
+  border-top: 1px solid rgba(140, 60, 220, 0.06);
+}
+
+/* =============================
+   REVEAL ANIMATIONS (JS-driven)
+   ============================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(.2,.9,.3,1), transform 0.9s cubic-bezier(.2,.9,.3,1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger helpers */
+.delay-1 { transition-delay: 0.18s; }
+.delay-2 { transition-delay: 0.36s; }
+.delay-3 { transition-delay: 0.54s; }
+.delay-4 { transition-delay: 0.72s; }
+.delay-5 { transition-delay: 0.90s; }
+
+/* =============================
+   LOGO ANIMATION (smooth)
+   ============================= */
+.logo-intro {
+  opacity: 0;
+  transform: scale(0.92);
+  animation: logoIn 1.9s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+@keyframes logoIn {
+  0% { opacity: 0; transform: scale(0.92) translateY(0); }
+  60% { opacity: 1; transform: scale(1.03) translateY(-4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* header slide in */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  animation: headerSlide 1.2s ease-out forwards;
+}
+@keyframes headerSlide {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* subtle float animation for hero-logo */
+@keyframes floatLogo {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
+
+/* =============================
+   FINAL SMALL THEME TUNES
+   ============================= */
+
+/* accent link color */
+a { color: #cfa8ff; transition: color .2s ease; }
+a:hover { color: #ffceff; }
+
+/* ensure hero sits above floating objects */
+.hero, .hero-content { position: relative; z-index: 2; }
+
+
+/* ===================================================
+   BOOKING SECTION — FUTURISTIC HOLOGRAM THEME
+   =================================================== */
+
+#booking {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hologram scan animation */
+#booking::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+  animation: holoScan 6s linear infinite;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+@keyframes holoScan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+#booking h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Booking Form Container — Hologram Panel */
+#bookingForm {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 18px;
+
+  /* FULL TRANSPARENCY */
+  background: rgba(255, 255, 255, 0); /* 100% transparent */
+
+  backdrop-filter: blur(0px); /* stronger hologram blur */
+
+  border: 1px solid rgba(180, 120, 255, 0.35);
+  box-shadow:
+    0 0 12px rgba(150, 80, 255, 0.25),
+    inset 0 0 22px rgba(180, 120, 255, 0.18);
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Floating hologram lines inside form */
+#bookingForm::before,
+#bookingForm::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d6b6ff, transparent);
+  animation: holoLine 4s linear infinite;
+  opacity: 0.5;
+}
+
+#bookingForm::before {
+  top: 20%;
+}
+
+#bookingForm::after {
+  bottom: 30%;
+  animation-duration: 6s;
+}
+
+@keyframes holoLine {
+  0% { transform: translateX(-20%); }
+  100% { transform: translateX(20%); }
+}
+
+/* Inputs */
+#bookingForm select,
+#bookingForm input,
+#bookingForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(30, 0, 60, 0.6);
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  border: 1px solid rgba(200, 150, 255, 0.18);
+}
+
+#bookingForm select:focus,
+#bookingForm input:focus,
+#bookingForm textarea:focus {
+  border-color: #b37aff;
+  background: rgba(60, 0, 120, 0.75);
+}
+
+/* Submit Button */
+#bookingForm button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #5c00ea, #b74fff);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(160, 80, 255, 0.4);
+}
+
+#bookingForm button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(180, 100, 255, 0.75);
+}
+
+/* Success or error message */
+#successMsg {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Make sections slightly transparent so hologram shapes show through */
+section, header, nav, footer {
+  position: relative;
+  z-index: 5;
+}
+
+.floating-objects {
+  z-index: 1 !important;
+}
+
+section, header, nav, footer {
+  background-clip: padding-box;
+}
+
+/* =======================================================
+   APPLY BACKGROUND IMAGE TO ALL SECTIONS (GLOBAL THEME)
+   ======================================================= */
+
+body, section, header, nav, footer {
+    background: transparent !important;
+    background-image: url("/static/images/bga.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+/* Add a dim overlay to keep everything readable */
+section::before,
+header::before,
+nav::before,
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);   /* adjust darker/lighter */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Make sure the content stays above overlay */
+section > *,
+header > *,
+nav > *,
+footer > * {
+    position: relative;
+    z-index: 1;
+}
+section, header, nav, footer {
+    position: relative;
+}
+/* =======================================================
+   FORCE DARK OVERLAY OVER BACKGROUND IMAGE
+   ======================================================= */
+
+body {
+    position: relative !important;
+    z-index: 0 !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    /* Dark overlay (adjust opacity below) */
+    background: rgba(0, 0, 0, 0.65) !important;
+
+    pointer-events: none;
+    z-index: 1 !important;
+}
+
+/* Make all page content appear above the darkener */
+* {
+    position: relative;
+    z-index: 2;
+}
+
+/* =====================================================
+   REMOVE BACKGROUND IMAGE ONLY FROM HERO SECTION
+   ===================================================== */
+
+.hero {
+    background-image: none !important;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+      url("/static/images/background.png") !important;
+}
+
+
+/* FIX ABOUT SECTION — remove its dark gradient */
+.about-section {
+    background: transparent !important;
+    background-image: url("/static/images/bga.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+/* Apply same darkness as other sections */
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* SAME darkness as others */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.about-section * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---- Unified page background (recommended) ---- */
+body, html { height: 100%; }
+
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/static/images/bga.png") center/cover no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.5; /* adjust brightness */
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* make sections transparent so underlying body image is visible */
+section, header, nav, footer, main {
+  background: transparent !important;
+  position: relative; /* keep their existing stacking contexts */
+}
+
+/* if you need a global dimmer/overlay above the image: */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45); /* tweak 0.25..0.75 */
+  pointer-events: none;
+  z-index: -1;
+}
+/* ---- REMOVE ALL SECTION GRADIENT BACKGROUNDS ---- */
+
+.about-section,
+.games-section,
+.cafe-dining,
+.pricing-section,
+.gallery-section,
+.contact-section,
+#booking {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.about-section::before,
+.games-section::before,
+.cafe-dining::before,
+.pricing-section::before,
+.gallery-section::before,
+.contact-section::before,
+#booking::before {
+    background: none !important;
+}

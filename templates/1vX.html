@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1vX Gaming - Elite Esports Arena</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css') }}">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ======================================================
+                     HEADER
+====================================================== -->
+<header id="header">
+  <img src="/static/images/logo.png" alt="1vX Logo" class="logo logo-intro">
+  <h1 id="heading" class="fade-left">1vX Gaming - Elite Esports Arena</h1>
+</header>
+
+<!-- ======================================================
+                     NAVIGATION
+====================================================== -->
+<nav>
+  <ul id="navi">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#cafe">Cafe Dining</a></li>
+    <li><a href="#pricing">Offers & Pricings</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Bookings</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ======================================================
+                     HERO SECTION
+====================================================== -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <img src="/static/images/logo.png" class="hero-logo logo-intro glow-logo">
+    <h1 class="reveal delay-1">Welcome to 1vX Gaming Café</h1>
+    <p class="reveal delay-2">Play • Eat • Compete • Repeat</p>
+
+    <p style="font-size: 1.4rem; color: #f2f2f2; max-width: 800px; margin: 10px auto 25px;">
+      Step into 1vX — where every match ignites adrenaline, every meal fuels your play, 
+      and every moment becomes a memory.
+    </p>
+
+    <a href="#gallery" class="hero-btn reveal delay-3">Explore Now</a>
+  </div>
+</section>
+
+<!-- ======================================================
+                     ABOUT SECTION
+====================================================== -->
+<section id="about" class="about-section reveal">
+  <div class="about-content">
+    <h2>About 1vX Gaming Arena</h2>
+    <p>
+      Welcome to <strong>1vX Gaming</strong> — your ultimate destination for esports, competition, and community.
+    </p>
+    <p>
+      From intense battles to laid-back gaming sessions, every setup is built for maximum immersion.
+    </p>
+    <p>
+      Whether you’re a competitive gamer or a newcomer — <strong>1vX</strong> is where every game matters.
+    </p>
+    <a href="#contact" class="btn">Join the Arena</a>
+  </div>
+</section>
+
+<!-- ======================================================
+                     GAMES SECTION
+====================================================== -->
+<section id="games" class="games-section">
+  <h2>Available Games</h2>
+
+  <div class="games-grid">
+
+    <div class="game-card reveal delay-1">
+      <img src="/static/images/ps.jpg" class="game-img">
+      <h3>PS5 Gaming</h3>
+      <p>Experience the latest PS5 titles on high-end consoles.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+    <div class="game-card reveal delay-2">
+      <img src="/static/images/car.jpg" class="game-img">
+      <h3>Racing Simulator</h3>
+      <p>Immersive racing with realistic controls.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+    <div class="game-card reveal delay-3">
+      <img src="/static/images/pc.jpg" class="game-img">
+      <h3>PC Gaming</h3>
+      <p>High-end esports-ready PC setups.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+    <div class="game-card reveal delay-4">
+      <img src="/static/images/vr.jpg" class="game-img">
+      <h3>VR Gaming</h3>
+      <p>Enter the virtual world and explore beyond reality.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+    <div class="game-card reveal delay-5">
+      <img src="/static/images/pool.jpg" class="game-img">
+      <h3>Pool</h3>
+      <p>Challenge your friends to a competitive pool match.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+    <div class="game-card reveal delay-6">
+      <img src="/static/images/board.jpg" class="game-img">
+      <h3>Board Games</h3>
+      <p>Relax and enjoy classic & modern board games.</p>
+      <a href="#booking" class="game-btn">Book Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================
+                     CAFE DINING
+====================================================== -->
+<section id="cafe" class="cafe-dining">
+
+  <!-- floating shapes -->
+  <div class="holo-shape holo-small delay-a" style="left:5%; bottom:-150px;">▲</div>
+  <div class="holo-shape holo-medium delay-b" style="left:35%; bottom:-200px;">⬢</div>
+  <div class="holo-shape holo-large delay-c" style="left:75%; bottom:-160px;">○</div>
+
+  <h2>Cafe Dining</h2>
+
+  <div class="menu-container">
+
+    <div class="menu-column reveal delay-1">
+      <h3>Non-Veg Starters</h3>
+      <p>Egg Chilli - ₹150</p>
+      <p>Chilli Chicken - ₹160</p>
+      <p>Dragon Chicken - ₹180</p>
+      <p>Honey Chicken - ₹180</p>
+
+      <h3>Maggi</h3>
+      <p>Plain Maggi - ₹80</p>
+      <p>Egg Maggi - ₹100</p>
+      <p>Chicken Maggi - ₹120</p>
+    </div>
+
+    <div class="menu-column reveal delay-2">
+      <h3>Veg Starters</h3>
+      <p>Chilli Paneer - ₹150</p>
+      <p>Dragon Potato - ₹150</p>
+      <p>Veg Momos - ₹100</p>
+      <p>Paneer Manchurian - ₹160</p>
+
+      <h3>Sandwiches</h3>
+      <p>Chicken Sandwich - ₹160</p>
+      <p>Cheese Grill - ₹140</p>
+      <p>Paneer Grill - ₹170</p>
+    </div>
+
+    <div class="menu-column reveal delay-3">
+      <h3>Burgers & Wraps</h3>
+      <p>Grilled Chicken Burger - ₹190</p>
+      <p>BBQ Burger - ₹200</p>
+      <p>Aloo Tikki - ₹160</p>
+
+      <h3>Fried Chicken</h3>
+      <p>Popcorn Chicken - ₹200</p>
+      <p>Chicken Strips - ₹220</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================
+                     PRICING
+====================================================== -->
+<section id="pricing" class="pricing-section">
+
+  <div class="holo-shape holo-medium delay-a" style="left:15%; bottom:-180px;">▲</div>
+  <div class="holo-shape holo-large delay-d" style="left:60%; bottom:-220px;">⬢</div>
+  <div class="holo-shape holo-small delay-b" style="left:85%; bottom:-120px;">○</div>
+
+  <h2>Offers & Pricing</h2>
+
+  <div class="pricing-container">
+
+    <div class="pricing-column reveal delay-1">
+      <h3>General Pricing</h3>
+      <p><strong>PC Games:</strong> ₹100/hr</p>
+      <p><strong>PS5:</strong> ₹150/hr</p>
+      <p><strong>Pool:</strong> ₹200/hr</p>
+    </div>
+
+    <div class="pricing-column reveal delay-2">
+      <h3>Special Offers</h3>
+      <ul>
+        <li>PC Gaming — ₹50/hr (Mon–Thu)</li>
+        <li>Free Beverage with meal</li>
+        <li>PS5 — 50% off on 2nd hour</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================
+                     GALLERY SECTION
+====================================================== -->
+<section class="gallery-section" id="gallery">
+  <h2>Gallery</h2>
+
+  <!-- Images -->
+  <div class="sub-gallery">
+    <h3>Images</h3>
+    <div class="gallery-container reveal">
+      <div id="image-gallery">
+        <img src="/static/images/gal_img1.jpg" class="active">
+        <img src="/static/images/gal_img2.png">
+        <img src="/static/images/gal_img3.png">
+        <img src="/static/images/gal_img4.png">
+        <img src="/static/images/gal_img5.png">
+        <img src="/static/images/gal_img6.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <div class="sub-gallery">
+    <h3>Videos</h3>
+    <div class="video-container reveal">
+      <video src="/static/videos/1vx_vid.mp4" controls></video>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Slideshow JS -->
+<script>
+const images = document.querySelectorAll("#image-gallery img");
+let currentIndex = 0;
+function showNextImage() {
+  images[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].classList.add("active");
+}
+setInterval(showNextImage, 3000);
+</script>
+
+<!-- ======================================================
+                     BOOKING
+====================================================== -->
+<section id="booking">
+  <h2 style="font-size: 40px; margin-bottom: 30px;">Book Your Session</h2>
+
+  <form id="bookingForm" action="/book" method="POST">
+
+    <select name="game_type" required>
+      <option value="">-- Select Game Type --</option>
+      <option>PC Games</option>
+      <option>PS5</option>
+      <option>VR</option>
+      <option>Pool</option>
+      <option>Car Simulator</option>
+      <option>Board Games</option>
+    </select>
+
+    <input type="date" name="date" required>
+
+    <select name="time" required>
+      <option value="">-- Select Time --</option>
+      {% for hour in range(10, 23) %}
+        <option value="{{ "%02d" % hour }}:00">{{ "%02d" % hour }}:00</option>
+      {% endfor %}
+    </select>
+
+    <input type="number" name="duration" placeholder="Duration (hours)" required>
+
+    <textarea name="message" placeholder="Any special request..."></textarea>
+
+    <button type="submit">Book Now</button>
+    <p id="successMsg" style="display:none;"></p>
+
+  </form>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const msg = document.getElementById("successMsg");
+
+      try {
+        const res = await fetch(form.action, { method: "POST", body: data });
+        const text = await res.text();
+
+        msg.style.display = "block";
+        msg.textContent = text;
+
+        if (res.ok) {
+          msg.style.color = "#00ff7f";
+          form.reset();
+        } else {
+          msg.style.color = "red";
+        }
+      } catch {
+        msg.textContent = "Network Error";
+        msg.style.color = "orange";
+      }
+    });
+  </script>
+</section>
+
+<!-- ======================================================
+                     CONTACT
+====================================================== -->
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <p class="contact-subtext">We’d love to hear from you!</p>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/1vxgaming/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/1vxgaming/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@1vXGaming" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:1vxgamigcafe@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <form class="contact-form reveal" action="https://formsubmit.co/1vxgamingcafe@gmail.com" method="POST">
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Message:</label>
+    <textarea rows="4" placeholder="Type your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- ======================================================
+                     FOOTER
+====================================================== -->
+<footer>
+  <p>&copy; 2025 1vX Gaming Arena | All Rights Reserved</p>
+</footer>
+
+<!-- Reveal on Scroll -->
+<script>
+  function revealElements() {
+    const elements = document.querySelectorAll('.reveal');
+    const trigger = window.innerHeight * 0.90;
+
+    elements.forEach(el => {
+      if (el.getBoundingClientRect().top < trigger) {
+        el.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealElements);
+  window.addEventListener('load', revealElements);
+</script>
+
+</body>
+</html>
